@@ -1,0 +1,58 @@
+/*----------------------- OEUVRES ---------------------------*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 58, 58);
+    font-size: 30px;
+    background-color: rgb(209, 185, 124);
+}
+
+ol {
+    counter-reset: livres;
+    width: 300px;
+    margin: 0 auto;
+}
+
+ol p {
+    font-weight: bold;
+    font-family: fantasy, sans-serif;
+}
+
+ol li {
+    list-style: none;
+    counter-increment: livres;
+    color: ghostwhite;
+    margin-bottom: 15px;
+}
+
+ol li:before {
+	content: counter(livres) ; /* on affiche le compteur */
+	padding: 0 20px 6px;
+	margin-right: 8px;
+	vertical-align: top;
+	background: #678;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;
+}
+
+h2 {
+    color: rgb(209, 185, 124);
+}
+
+h2 + img {
+    width: 130px;
+    float: left;
+    margin: 20px;
+}
+p::first-letter{
+    font-size: 150%;
+    color: rgb(209, 185, 124);
+}
+
+p {
+    color: ghostwhite;
+    text-align: justify;
+}

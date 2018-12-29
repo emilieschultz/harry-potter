@@ -1,0 +1,59 @@
+/*-------------------------- A PROPOS ---------------------*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 58, 58);
+    font-size: 30px;
+    background-color: rgb(209, 185, 124);
+}
+
+.img1 {
+    float: left;
+    width: 175px;
+    margin-right: 20px;
+}
+
+p::first-letter{
+    font-size: 150%;
+    color: rgb(209, 185, 124);
+}
+
+p {
+    color: ghostwhite;
+    text-align: justify;
+}
+
+h2 img p {
+    font-size: 12pt;
+    text-align: justify;
+}
+
+/*------------------------ ACTEURS PRINCIPAUX -----------------------------*/
+
+.center {
+    display: table;
+    margin: auto;
+}
+
+figure {
+    display: inline-block;
+    margin: 5px 20px 5px 20px;
+    padding: 0;
+    width: 100px;
+    vertical-align: top;
+}
+
+figure img {
+    width: 70px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
