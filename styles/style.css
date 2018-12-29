@@ -1,51 +1,53 @@
 body {
     background-color: black;
 }
-wrap {
+
+.wrap {
     width: 960px;
+    margin: 0 auto;
     position: relative;
 }
 /*------------------------- HEADER --------------------------*/
-
 header {
     position: relative;
+    height: 350px;
 }
 
 header img {
     width: 700px;
     margin: 0;
     position: absolute;
-    left: 550px;
+    right: 0;
 }
 
 .logo {
-    width: 550px;
+    width: 400px;
     position: absolute;
     top: 50px;
-    left: 40px;
+    left: 0;
 }
 /*------------------- NAV -------------------------------*/
 nav {
     width: 200px;
     position: relative;
     float: left;
-    top: 400px;
 }
 
 nav ul {
     list-style: none;
 }
-nav ul li {
-    padding: 10px;
-}
 
-nav ul li:hover {
-    background-color: greenyellow;
+nav ul li a:hover {
+    border: 1px solid rgb(209, 185, 124);
+    border-radius: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: rgb(209, 185, 124);
+    padding: 10px;
+    display: block;
+    border: 1px solid transparent;
 }
 /*----------------------------------- MAIN -----------------------------*/
 .principal {
@@ -54,7 +56,13 @@ nav ul li a {
     margin-left: 220px;
     background-color: rgb(51, 58, 58);
     padding: 20px;
-    margin-top: 350px;
+}
+
+.flag {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: -5px;
 }
 /*-------------------------- A PROPOS ---------------------*/
 h2 {
@@ -88,23 +96,27 @@ h2 img p {
 /*----------------------- OEUVRES ---------------------------*/
 .img2 {
     position: absolute;
-    left: 400px;
-    top: 500px;
+    right: 70px;
+    top: 600px;
     width: 250px;
+    border-radius: 20px;
 }
 
 ol {
     counter-reset: livres;
 }
+
 ol p {
     font-weight: bold;
 }
+
 ol li {
     list-style: none;
     counter-increment: livres;
     color: ghostwhite;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
+
 ol li:before {
 	content: counter(livres) ; /* on affiche le compteur */
 	padding: 0 20px 6px;
@@ -126,6 +138,7 @@ img {
     display: table;
     margin: auto;
 }
+
 figure {
     display: inline-block;
     margin: 5px 20px 5px 20px;
@@ -136,10 +149,15 @@ figure {
 
 figure img {
     width: 70px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
 }
 
 figcaption {
     font-weight: bold;
     font-size: 10px;
     color: white;
+    text-align: center;
+    padding-top: 10px;
 }
