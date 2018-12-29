@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+}
+wrap {
+    width: 960px;
+    position: relative;
+}
+/*------------------------- HEADER --------------------------*/
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 700px;
+    margin: 0;
+    position: absolute;
+    left: 550px;
+}
+
+.logo {
+    width: 550px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+/*------------------- NAV -------------------------------*/
+nav {
+    width: 200px;
+    position: relative;
+    float: left;
+    top: 400px;
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: greenyellow;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(209, 185, 124);
+}
+/*----------------------------------- MAIN -----------------------------*/
+.principal {
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 220px;
+    background-color: rgb(51, 58, 58);
+    padding: 20px;
+    margin-top: 350px;
+}
+/*-------------------------- A PROPOS ---------------------*/
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 58, 58);
+    font-size: 30px;
+    background-color: rgb(209, 185, 124);
+}
+
+.img1 {
+    float: left;
+    width: 175px;
+    margin-right: 20px;
+}
+
+p::first-letter{
+    font-size: 150%;
+    color: rgb(209, 185, 124);
+}
+
+p {
+    color: ghostwhite;
+    text-align: justify;
+}
+
+h2 img p {
+    font-size: 12pt;
+    text-align: justify;
+}
+/*----------------------- OEUVRES ---------------------------*/
+.img2 {
+    position: absolute;
+    left: 400px;
+    top: 500px;
+    width: 250px;
+}
+
+ol {
+    counter-reset: livres;
+}
+ol p {
+    font-weight: bold;
+}
+ol li {
+    list-style: none;
+    counter-increment: livres;
+    color: ghostwhite;
+    margin-bottom: 10px;
+}
+ol li:before {
+	content: counter(livres) ; /* on affiche le compteur */
+	padding: 0 20px 6px;
+	margin-right: 8px;
+	vertical-align: top;
+	background: #678;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	font-weight: bold;
+	font-size: 0.8em;
+	color: white;
+}
+/*------------------------ ACTEURS PRINCIPAUX -----------------------------*/
+img {
+    margin: 20px;
+}
+
+.center {
+    display: table;
+    margin: auto;
+}
+figure {
+    display: inline-block;
+    margin: 5px 20px 5px 20px;
+    padding: 0;
+    width: 100px;
+    vertical-align: top;
+}
+
+figure img {
+    width: 70px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+}
