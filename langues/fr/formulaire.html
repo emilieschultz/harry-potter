@@ -7,6 +7,7 @@
     <title>Harry Potter - Formulaire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../styles/form.css" />
     <link rel=”alternate” hreflang=”fr” href="../en/form.html" />
 </head>
 
@@ -20,21 +21,81 @@
 
         <nav>
             <!--************************************** Menu ***************************************************-->
+            <h1>Menu</h1>
             <ul>
                 <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="formulaire.html" class="active">Formulaire</a></li>
                 <li><a href="contenu.html">Contenu</a></li>
-                <li><a href="https://www.wbstudiotour.co.uk/fr" target="_blank">Warner Bros studio tour</a></li>
-                <li><a href="https://wizardingworld.warnerbros.fr/articles/megapost-harry-potter-personnages" target="_blank">Personnages</a></li>
-                <li><a href="styles" target="_blank">Fichier css</a></li>
+            </ul>
+            <h1>Contenu</h1>
+            <ul>
+                <li><a href="contenu.html#book1">Livre 1</a></li>
+                <li><a href="contenu.html#book2">Livre 2</a></li>
+                <li><a href="contenu.html#book3">Livre 3</a></li>
+                <li><a href="contenu.html#book4">Livre 4</a></li>
+                <li><a href="contenu.html#book5">Livre 5</a></li>
+                <li><a href="contenu.html#book6">Livre 6</a></li>
+                <li><a href="contenu.html#book7">Livre 7</a></li>
             </ul>
         </nav>
         <main>
             <!--************************************** Main *************************************************-->
             <div class="principal">
                 <aside><a href="../en/form.html" title="accéder à la page en anglais"><img class="flag" src="../../images/british_flag.jpg"
-                    alt="drapeau anglais"></a></aside>
-            <li><a href="https://tp.iha.unistra.fr/~schultze/info1/projet1/reception.php">Formulaire methode Get</a></li>
-
+                            alt="drapeau anglais"></a></aside>
+                <section>
+                    <fieldset>
+                        <legend>Formulaire</legend>
+                        <form method="get" action="/reception.php">
+                            <p>
+                                <label for="prenom">Votre prénom :</label>
+                                <input type="text" name="prenom" id="prenom" placeholder="Ex : Harry" size="30"
+                                    maxlength="10" required />
+                            </p>
+                            <p>
+                                <label for="email">Votre e-mail</label>
+                                <input type="email" placeholder="Ex : harrypotter@gmail.com" />
+                            </p>
+                            <p>
+                                <label for="tel">Votre numéro de téléphone</label>
+                                <input type="tel" />
+                            </p>
+                            <p>
+                                <label for="livres">Combien de livres de la saga Harry Potter avec-vous lu ? :
+                                </label>
+                                <input type="number" name="livres" id="livres" min="0" max="8" />
+                            </p>
+                            <p>
+                                Quel est votre personnage préféré ? :<br />
+                                <input type="radio" name="perso" value="harry" id="harry" /> <label for="harry">Harry</label>
+                                <input type="radio" name="perso" value="ron" id="ron" /> <label for="ron">Ron</label>
+                                <input type="radio" name="perso" value="hermione" id="hermione" /> <label for="hermione">Hermione</label>
+                                <input type="radio" name="perso" value="dumbledore" id="dumbledore" /> <label for="dumbledore">Dumbledore</label>
+                                <input type="radio" name="perso" value="voldemort" id="voldemort" /> <label for="voldemort">Voldemort</label>
+                            </p>
+                            <p>
+                                Quel est votre moyen de transport préféré ? :<br />
+                                <input type="checkbox" name="vehicule" value="train" id="train" /> <label for="train">Poudlard
+                                    Express</label><br />
+                                <input type="checkbox" name="vehicule" value="voiture" id="voiture" /> <label for="voiture">Voiture
+                                    volante</label><br />
+                                <input type="checkbox" name="vehicule" value="nimbus" id="nimbus" /> <label for="nimbus">Nimbus
+                                    2000</label><br />
+                            </p>
+                            <form method="post" action="traitement.php">
+                                <p>
+                                    <label for="ameliorer">
+                                        Comment pensez-vous que je puisse améliorer mon site ?
+                                    </label>
+                                    <br />
+                                    <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>
+                                </p>
+                            </form>
+                            <button type="submit">Valider</button>
+                            <button type="reset">Annuler</button>
+                        </form>
+                    </fieldset>
+                </section>
             </div>
         </main>
     </div>

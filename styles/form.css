@@ -1,0 +1,12 @@
+legend {
+    color: ghostwhite;
+    font-size: 200%;
+}
+
+section {
+    margin-top: 50px;
+}
+
+li ul li {
+    margin-left: 0px;
+}

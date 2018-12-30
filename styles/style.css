@@ -1,4 +1,4 @@
-* { 
+* {
     box-sizing: border-box;
 }
 
@@ -38,14 +38,18 @@ nav {
     padding-top: 25px;
 }
 
-
-nav ul {
-    position: absolute;
-    top: 90px;
-    list-style: none;
+nav h1 {
+    font-size: 24px;
+    margin-bottom: 0;
 }
 
-nav ul li a:hover {
+nav ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+nav ul li a:hover, nav ul li a.active {
     border: 1px solid rgb(209, 185, 124);
     border-radius: 20px;
 }
@@ -54,6 +58,7 @@ nav ul li a {
     text-decoration: none;
     color: rgb(209, 185, 124);
     padding: 10px;
+    padding-left: 17px;
     display: block;
     border: 1px solid transparent;
 }
@@ -73,6 +78,14 @@ nav ul li a {
     top: 0;
 }
 /*------------------------------ PARAGRAPH ----------------------*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 58, 58);
+    font-size: 30px;
+    background-color: rgb(209, 185, 124);
+}
+
 p::first-letter{
     font-size: 150%;
     color: rgb(209, 185, 124);
