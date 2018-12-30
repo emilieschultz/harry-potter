@@ -4,9 +4,11 @@ ol { /* -------------------liste à puce--------------------*/
     margin: 0 auto;
 }
 
-ol p {
+.listTitle {
     font-weight: bold;
     font-family: fantasy, sans-serif;
+    margin-left: 240px;
+    margin-top: 30px;
 }
 
 ol li {
@@ -36,7 +38,7 @@ ol li a:hover {
     color: rgb(209, 185, 124);
 }
 /*----------------------- RESUME DES LIVRES -----------------------*/
-h2 {
+h3 {
     color: rgb(209, 185, 124);
     padding-top: 23px;
 }
@@ -47,7 +49,7 @@ figure + img {
     margin: 20px;
 }
 
-h2 + img {
+h3 + img {
     width: 130px;
     float: left;
     margin: 20px;

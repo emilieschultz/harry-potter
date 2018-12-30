@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/content.css" />
-    <link rel=”alternate” hreflang=”en” href="../en/content.html" />
 </head>
 
 <body>
@@ -17,13 +16,15 @@
             <!--************************************** Header *******************************************************-->
             <img src="../../images/banniereHarryPotter.jpg" alt="bandeau harry potter" />
             <img class="logo" src="../../images/logo_hp_coulisses.png" alt="logo harry potter">
+            <h1>Les aventures de Harry Potter</h1>
         </header>
 
         <nav>
             <!--************************************** Menu ***************************************************-->
-            <h1>Menu</h1>
+            <p>Menu</p>
             <ul>
                 <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="contenu.html" class="active">Contenu</a></li>
                 <li><a href="formulaire.html">Formulaire</a></li>
             </ul>
         </nav>
@@ -31,14 +32,14 @@
         <main>
             <!--************************************** Main *************************************************-->
             <div class="principal">
-                <aside><a href="../en/content.html" title="accéder à la page en anglais"><img class="flag" src="../../images/british_flag.jpg"
-                            alt="drapeau anglais"></a></aside>
+                <aside><a href="../en/content.html" title="accéder à la page en anglais" hreflang="en"><img class="flag"
+                            src="../../images/british_flag.jpg" alt="drapeau anglais"></a></aside>
                 <section>
+                    <!--******************** Oeuvres *******************-->
+                    <h2>Les oeuvres littéraires</h2>
                     <article>
-                        <!--******************** Oeuvres *******************-->
-                        <h1>Les oeuvres littéraires</h1>
+                        <h3 class="listTitle">Romans :</h3>
                         <ol>
-                            <p>Romans :</p>
                             <li><a href="#book1"> L'école des sorciers</a></li>
                             <li><a href="#book2"> La chambre des secrets</a></li>
                             <li><a href="#book3"> Le Prisonnier Azkaban</a></li>
@@ -46,16 +47,18 @@
                             <li><a href="#book5"> L'ordre du Phoenix</a></li>
                             <li><a href="#book6"> Le prince de sang-mêlé</a></li>
                             <li><a href="#book7"> Les reliques de la mort</a></li>
-                            <p>Pièce de théatre :</p>
+                        </ol>
+                        <h3 class="listTitle">Pièce de théatre :</h3>
+                        <ol>
                             <li>L'enfant maudit</li>
                         </ol>
                     </article>
                 </section>
                 <section>
-                    <h1>Résumé des livres</h1> <!-- ************** Resume des livres ***************************-->
+                    <h2>Résumé des livres</h2> <!-- ************** Resume des livres ***************************-->
                     <article>
                         <!--book 1-->
-                        <h2 id="book1">Harry Potter à l'école des soricers</h2>
+                        <h3 id="book1">Harry Potter à l'école des soricers</h3>
                         <img src="../../images/book1.jpg" alt="livre 1 : Harry Potter à l'école des soricers">
                         <p>L'intrigue du premier roman débute durant l'été 1991. Peu avant son onzième anniversaire,
                             Harry reçoit une lettre l'invitant à se présenter lors de la rentrée des classes à l'école
@@ -73,7 +76,7 @@
                     </article>
                     <article>
                         <!--book 2-->
-                        <h2 id="book2">Harry Potter et la chambre des sorciers</h2>
+                        <h3 id="book2">Harry Potter et la chambre des sorciers</h3>
                         <img src="../../images/book2.jpg" alt="livre 2 : Harry Potter et la chambre des soricers">
                         <p>L'année suivante, Harry et ses amis doivent faire face à une nouvelle menace à Poudlard. La
                             fameuse Chambre des secrets, bâtie plusieurs siècles plus tôt par l'un des fondateurs de
@@ -92,7 +95,7 @@
                     </article>
                     <article>
                         <!--book 3-->
-                        <h2 id="book3">Harry Potter et le prisonnier d'Azkaban</h2>
+                        <h3 id="book3">Harry Potter et le prisonnier d'Azkaban</h3>
                         <img src="../../images/book3.jpg" alt="livre 3 : Harry Potter et le prisonnier d'Azkaban">
                         <p>À l'été 1993, les sorciers, ainsi que les Moldus, sont informés de l'évasion de prison d'un
                             dangereux criminel nommé Sirius Black. Un peu plus tard, Harry apprend que la motivation de
@@ -116,7 +119,7 @@
                     </article>
                     <article>
                         <!--book 4-->
-                        <h2 id="book4">Harry Potter et la coupe de feu</h2>
+                        <h3 id="book4">Harry Potter et la coupe de feu</h3>
                         <img src="../../images/book4.jpg" alt="livre 4 : Harry Potter et la coupe de feu">
                         <p>Dans l'intrigue du quatrième roman, une édition du célèbre tournoi des Trois Sorciers se
                             déroule exceptionnellement à Poudlard et deux autres délégations européennes se rendent sur
@@ -137,7 +140,7 @@
                     </article>
                     <article>
                         <!--book 5-->
-                        <h2 id="book5">Harry Potter et l'ordre du Phoenix</h2>
+                        <h3 id="book5">Harry Potter et l'ordre du Phoenix</h3>
                         <img src="../../images/book5.jpg" alt="livre 5 : Harry Potter et l'ordre du Phoenix">
                         <p>Harry, Ron et Hermione retournent à Poudlard, où
                             un nouveau professeur de défense contre les forces du mal, Dolores Ombrage, engagée par le
@@ -160,7 +163,7 @@
                     </article>
                     <article>
                         <!--book 6-->
-                        <h2 id="book6">Harry Potter et le prince de sang-mêlé</h2>
+                        <h3 id="book6">Harry Potter et le prince de sang-mêlé</h3>
                         <img src="../../images/book6.jpg" alt="livre 6 : Harry Potter et le prince de sang-mêlé">
                         <p> L'intrigue de ce sixième roman se concentre davantage sur l'histoire de Voldemort. En
                             parallèle, durant ses cours de potions, Harry récupère un vieux manuel ayant appartenu à un
@@ -183,7 +186,7 @@
                     </article>
                     <article>
                         <!--book 7-->
-                        <h2 id="book7">Harry Potter et les reliques de la mort</h2>
+                        <h3 id="book7">Harry Potter et les reliques de la mort</h3>
                         <img src="../../images/book7.jpg" alt="livre 7 : Harry Potter et les reliques de la mort">
                         <p>Harry
                             doit mourir, car il constitue lui-même un horcruxe involontaire depuis le jour où Voldemort

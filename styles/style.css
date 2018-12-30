@@ -30,6 +30,14 @@ header img {
     top: 50px;
     left: 0;
 }
+
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: rgb(209, 185, 124);
+    font-size: 15px;
+}
 /*------------------- NAV -------------------------------*/
 nav {
     width: 200px;
@@ -38,9 +46,15 @@ nav {
     padding-top: 25px;
 }
 
-nav h1 {
+nav p {
     font-size: 24px;
     margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(51, 58, 58);
+    font-size: 30px;
+    background-color: rgb(209, 185, 124);
+    padding: 0;
 }
 
 nav ul {
@@ -78,15 +92,17 @@ nav ul li a {
     top: 0;
 }
 /*------------------------------ PARAGRAPH ----------------------*/
-h1 {
+
+h2 {
     text-align: center;
     font-weight: bold;
     color: rgb(51, 58, 58);
     font-size: 30px;
     background-color: rgb(209, 185, 124);
+    margin-top: 40px;
 }
 
-p::first-letter{
+.principal p::first-letter{
     font-size: 150%;
     color: rgb(209, 185, 124);
 }

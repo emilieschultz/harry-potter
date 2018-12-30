@@ -3,10 +3,6 @@ legend {
     font-size: 200%;
 }
 
-section {
+fieldset {
     margin-top: 50px;
-}
-
-li ul li {
-    margin-left: 0px;
 }

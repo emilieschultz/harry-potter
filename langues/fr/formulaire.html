@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/form.css" />
-    <link rel=”alternate” hreflang=”fr” href="../en/form.html" />
 </head>
 
 <body>
@@ -17,17 +16,18 @@
             <!--************************************** Header *******************************************************-->
             <img src="../../images/banniereHarryPotter.jpg" alt="bandeau harry potter" />
             <img class="logo" src="../../images/logo_hp_coulisses.png" alt="logo harry potter">
+            <h1>Les aventures de Harry Potter</h1>
         </header>
 
         <nav>
             <!--************************************** Menu ***************************************************-->
-            <h1>Menu</h1>
+            <p>Menu</p>
             <ul>
                 <li><a href="../../index.html">Accueil</a></li>
                 <li><a href="formulaire.html" class="active">Formulaire</a></li>
                 <li><a href="contenu.html">Contenu</a></li>
             </ul>
-            <h1>Contenu</h1>
+            <p>Contenu</p>
             <ul>
                 <li><a href="contenu.html#book1">Livre 1</a></li>
                 <li><a href="contenu.html#book2">Livre 2</a></li>
@@ -41,12 +41,11 @@
         <main>
             <!--************************************** Main *************************************************-->
             <div class="principal">
-                <aside><a href="../en/form.html" title="accéder à la page en anglais"><img class="flag" src="../../images/british_flag.jpg"
+                <aside><a href="../en/form.html" title="accéder à la page en anglais" hreflang="en"><img class="flag" src="../../images/british_flag.jpg"
                             alt="drapeau anglais"></a></aside>
-                <section>
                     <fieldset>
                         <legend>Formulaire</legend>
-                        <form method="get" action="/reception.php">
+                        <form method="post" action="../../reception.php">
                             <p>
                                 <label for="prenom">Votre prénom :</label>
                                 <input type="text" name="prenom" id="prenom" placeholder="Ex : Harry" size="30"
@@ -54,11 +53,11 @@
                             </p>
                             <p>
                                 <label for="email">Votre e-mail</label>
-                                <input type="email" placeholder="Ex : harrypotter@gmail.com" />
+                                <input type="email" name="email" id="email" placeholder="Ex : harrypotter@gmail.com" />
                             </p>
                             <p>
                                 <label for="tel">Votre numéro de téléphone</label>
-                                <input type="tel" />
+                                <input type="tel" name="tel" id="tel"/>
                             </p>
                             <p>
                                 <label for="livres">Combien de livres de la saga Harry Potter avec-vous lu ? :
@@ -82,7 +81,6 @@
                                 <input type="checkbox" name="vehicule" value="nimbus" id="nimbus" /> <label for="nimbus">Nimbus
                                     2000</label><br />
                             </p>
-                            <form method="post" action="traitement.php">
                                 <p>
                                     <label for="ameliorer">
                                         Comment pensez-vous que je puisse améliorer mon site ?
@@ -90,16 +88,13 @@
                                     <br />
                                     <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>
                                 </p>
-                            </form>
                             <button type="submit">Valider</button>
                             <button type="reset">Annuler</button>
                         </form>
                     </fieldset>
-                </section>
             </div>
         </main>
     </div>
-
 </body>
 
 </html>

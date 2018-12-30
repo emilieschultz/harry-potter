@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../../styles/form.css" />
-    <link rel=”alternate” hreflang=”fr” href="../fr/formulaire.html" />
 </head>
 
 <body>
@@ -17,17 +16,18 @@
             <!--************************************** Header *******************************************************-->
             <img src="../../images/banniereHarryPotter.jpg" alt="bandeau harry potter" />
             <img class="logo" src="../../images/logo_hp_coulisses.png" alt="logo harry potter">
+            <h1>The Harry Potter's adventures</h1>
         </header>
 
         <nav>
             <!--************************************** Menu ***************************************************-->
-            <h1>Menu</h1>
+            <p>Menu</p>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="form.html" class="active">Form</a></li>
                 <li><a href="content.html">Content</a></li>
             </ul>
-            <h1>Content</h1>
+            <p>Content</p>
             <ul>
                 <li><a href="content.html#book1">Book 1</a></li>
                 <li><a href="content.html#book2">Book 2</a></li>
@@ -42,61 +42,59 @@
         <main>
             <!--************************************** Main *************************************************-->
             <div class="principal">
-                <aside><a href="../fr/formulaire.html" hreflang="fr" title="go to french page"><img class="flag" src="../../images/french_flag.jpg"
-                            alt="french flag"></a></aside>
-                <section>
-                    <!--***************** Form **********************************-->
-                    <fieldset>
-                        <legend>Form</legend>
-                        <form method="get" action="../../reception.php">
-                            <p>
-                                <label for="prenom">Your name :</label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Ex : Harry" size="30"
-                                    maxlength="10" required />
-                            </p>
-                            <p>
-                                <label for="email">Your e-mail address</label>
-                                <input type="email" placeholder="harrypotter@gmail.com" />
-                            </p>
-                            <p>
-                                <label for="tel">Your phone number</label>
-                                <input type="tel" />
-                            </p>
-                            <p>
-                                <label for="livres">How many books of the Harry Potter's saga have you read ? :
-                                </label>
-                                <input type="number" name="livres" id="livres" min="0" max="8" />
-                            </p>
-                            <p>
-                                What's your favorite character ? :<br />
-                                <input type="radio" name="perso" value="harry" id="harry" /> <label for="harry">Harry</label>
-                                <input type="radio" name="perso" value="ron" id="ron" /> <label for="ron">Ron</label>
-                                <input type="radio" name="perso" value="hermione" id="hermione" /> <label for="hermione">Hermione</label>
-                                <input type="radio" name="perso" value="dumbledore" id="dumbledore" /> <label for="dumbledore">Dumbledore</label>
-                                <input type="radio" name="perso" value="voldemort" id="voldemort" /> <label for="voldemort">Voldemort</label>
-                            </p>
-                            <p>
-                                What's favorite travel mode ? :<br />
-                                <input type="checkbox" name="vehicule" value="train" id="train" /> <label for="train">Poudlard
-                                    Express</label><br />
-                                <input type="checkbox" name="vehicule" value="voiture" id="voiture" /> <label for="voiture">The
-                                    flying car</label><br />
-                                <input type="checkbox" name="vehicule" value="nimbus" id="nimbus" /> <label for="nimbus">The
-                                    Nimbus
-                                    2000</label><br />
-                            </p>
-                            <p>
-                                <label for="ameliorer">
-                                    What do you think about my website ?
-                                </label>
-                                <br />
-                                <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>
-                            </p>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Cancel</button>
-                        </form>
-                    </fieldset>
-                </section>
+                <aside><a href="../fr/formulaire.html" hreflang="fr" title="go to french page"><img class="flag"
+                            src="../../images/french_flag.jpg" alt="french flag"></a></aside>
+                <!--***************** Form **********************************-->
+                <fieldset>
+                    <legend>Form</legend>
+                    <form method="post" action="../../reception.php">
+                        <p>
+                            <label for="prenom">Your name :</label>
+                            <input type="text" name="prenom" id="prenom" placeholder="Ex : Harry" size="30" maxlength="10"
+                                required />
+                        </p>
+                        <p>
+                            <label for="email">Your e-mail address</label>
+                            <input type="email" name="email" id="email" placeholder="harrypotter@gmail.com" />
+                        </p>
+                        <p>
+                            <label for="tel">Your phone number</label>
+                            <input type="tel" name="tel" id="tel" />
+                        </p>
+                        <p>
+                            <label for="livres">How many books of the Harry Potter's saga have you read ? :
+                            </label>
+                            <input type="number" name="livres" id="livres" min="0" max="8" />
+                        </p>
+                        <p>
+                            What's your favorite character ? :<br />
+                            <input type="radio" name="perso" value="harry" id="harry" /> <label for="harry">Harry</label>
+                            <input type="radio" name="perso" value="ron" id="ron" /> <label for="ron">Ron</label>
+                            <input type="radio" name="perso" value="hermione" id="hermione" /> <label for="hermione">Hermione</label>
+                            <input type="radio" name="perso" value="dumbledore" id="dumbledore" /> <label for="dumbledore">Dumbledore</label>
+                            <input type="radio" name="perso" value="voldemort" id="voldemort" /> <label for="voldemort">Voldemort</label>
+                        </p>
+                        <p>
+                            What's favorite travel mode ? :<br />
+                            <input type="checkbox" name="vehicule" value="train" id="train" /> <label for="train">Poudlard
+                                Express</label><br />
+                            <input type="checkbox" name="vehicule" value="voiture" id="voiture" /> <label for="voiture">The
+                                flying car</label><br />
+                            <input type="checkbox" name="vehicule" value="nimbus" id="nimbus" /> <label for="nimbus">The
+                                Nimbus
+                                2000</label><br />
+                        </p>
+                        <p>
+                            <label for="ameliorer">
+                                What do you think about my website ?
+                            </label>
+                            <br />
+                            <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea>
+                        </p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </form>
+                </fieldset>
             </div>
         </main>
     </div>
